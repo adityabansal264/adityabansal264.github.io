@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOGIN</title>
+</head>
+<style type="text/css">
+	body{
+		padding-left: 350px;
+		padding-top: 200px;
+		background-color: #34495e;
+	}
+
+	
+	h1{
+		color: white;
+		padding-left: 30px;
+	}
+	.box{
+		background-color: black;
+		width: 400px;		
+		padding-left: 150px;
+	}	
+	
+	.box input[type="text"],.box input[type="password"]
+	{
+	  
+	  background: none;
+	  display: block;
+	  margin: 10px;
+	  text-align: center;
+	  border-color: #00ff00;
+	  border-style: solid 2px;
+	  padding-top: 2px;
+	  padding-bottom: 2px;
+	  width: 200px;
+
+	  outline: none;
+	  color: white;
+	  border-radius: 25px;
+	  transition: 0.25s;	
+	}
+	 .box input[type="text"]:focus,.box input[type="password"]:focus{
+	 	width: auto;
+	 }
+	.box input[type="submit"]
+	{
+		
+		display: block;
+		margin: 10px;
+		text-align: center;
+		border-color: #ff8000	;
+		border-style: solid 4px;
+		padding-top: 3px;
+		padding-bottom: 2px;
+		color: white;
+		background-color: #ff8000;
+		margin-left: 90px;
+
+	}	
+</style>
+<body>
+	<script type="text/javascript">
+	function f1() {
+	var usrname=document.getElementByid("u");
+	var pass=document.getElementByid("p");
+	if (usrname.value.trim()=="" | pass.value.trim()=="") {
+		alert("blank values are not allowed");
+		return false;
+	}
+	else{
+		return true;
+	}
+}
+</script>
+	<form class="box" onsubmit=" return f1()" action="form.html" >
+	<h1>WELCOME</h1>
+	<input id="u" type="text" name="" placeholder="userid"><br>
+	<input  id="p" type="password" name="" placeholder="password" ><br>
+	<input type="submit" name=" " value="login" >
+</form>
+
+
+</body>
+</html>
