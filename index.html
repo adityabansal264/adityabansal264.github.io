@@ -62,9 +62,11 @@
 <body>
 	<script type="text/javascript">
 	function f1() {
-	var usrname=document.getElementByid("u");
-	var pass=document.getElementByid("p");
-	if (usrname.value.trim()=="" | pass.value.trim()=="") {
+	var usrname=document.getElementById("u");
+	var pass=document.getElementById("p");
+		console.log(usrname.value);
+		console.log(pass.value);
+	if (usrname.value.trim()=="" || pass.value.trim()=="") {
 		alert("blank values are not allowed");
 		return false;
 	}
@@ -75,8 +77,8 @@
 </script>
 	<form class="box" onsubmit=" return f1()" action="form.html" >
 	<h1>WELCOME</h1>
-	<input id="u" type="text" name="" placeholder="userid"><br>
-	<input  id="p" type="password" name="" placeholder="password" ><br>
+	<input Id="u" type="text" name="" placeholder="userid"><br>
+	<input  Id="p" type="password" name="" placeholder="password" ><br>
 	<input type="submit" name=" " value="login" >
 </form>
 
