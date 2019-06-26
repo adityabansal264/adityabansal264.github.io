@@ -1,0 +1,67 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+	<title>club form</title>
+	<style type="text/css">
+	table{border:none;padding:0px;} 
+	.blue{color: blue;}
+	#or{color:red;
+	    font-size: 50px;}
+	#pos{vertical-align: top;}
+	body{
+		background-image: url("./download.jpg");
+		background-size: cover;
+	}	
+	h1{
+		text-align: center;
+		font-size: 110px;
+     	}			
+     .ok{
+     	font-size: 27px;
+     }	
+     .box input[type="submit"]
+     {
+        color: white;
+        background-color: grey; 
+     }		
+	</style>
+</head>
+<body>
+	<h1 style="color: rgb(40% 20% 50%);"><u>welcome to clubs</u></h1>
+	 <p id="or">please fill the given below form</p>
+	 <br>
+	  <p>
+	  	<form class="ok" action="response.html" method="POST">
+	  		<table>
+	  		<tr><td class="blue">FIRST NAME :</td><td> <input type="text" name="firstname" value="" required  /></td></tr><br />
+	  		<tr><td class="blue">LAST NAME : </td><td><input type="text" name="lastname" value="" required  /></td></tr><br />
+	  		<tr><td class="blue">GENDER : </td><td><input type="radio" name="sex" value="male" required>MALE<br />
+	  		        <input type="radio" name="sex" value="female">FEMALE</td></tr><br />
+	  		<tr><td class="blue">PHONE MUMBER : </td><td><input type="number" name="phonenumber" value="" required /></td></tr><br />
+	  		<tr><td class="blue">EMAIL ID : </td><td><input type="emailid" name="emailid" value="" required /></td></tr><br />
+	  		<tr><td class="blue">COLLEGE NAME :</td><td> <select name="colleges" required>
+	  			<option value="cet">college of engineering and technology</option>
+	  			<option value="burla">vssut</option>
+	  			<option value="silicon">silicon institute of technology</option>
+	  			<option value="iter">institute of technical and research</option>
+	  			<option value="kiit">kalinga institute of industry and technology</option>
+	  			<option value="nit">nalanda institute of technology</option>
+
+	  		</select></td></tr>
+	  			  		<tr><td id="pos" class="blue">CLUBS : </td><td><input type="checkbox" name="club" value="zairza"  />ZAIRZA<br />
+	  		        <input type="checkbox" name="club" value="SAE"  />SAE<br />
+	  		        <input type="checkbox" name="club" value="spectrum"  />SPECTRUM<br />
+	  		        <input type="checkbox" name="club" value="TDA"  />TDA<br />
+	  		        <input type="checkbox" name="club" value="amuza"  />AMUZA<br />
+	  		        <input type="checkbox" name="club" value="RPEGO"  />RPEGO<br />
+	  		        <input type="checkbox" name="club" value="ED cell"  />ED CELL<br />
+	  		        <input type="checkbox" name="club" value="energy club"  />ENERGY CLUB</td></tr>
+	  		<tr><td class="blue">DATE : </td><td> <input type="DATE" name="date" required  /></td></tr>
+	  		<tr><td></td><td><input type="submit" value="DONE"  /></td></tr>
+	  	</table>
+	  	</form>
+	  </p>
+ 
+</body>
+</html>
